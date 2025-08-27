@@ -1,0 +1,2 @@
+# Core dependencies for markdown-to-pptx POC
+python-pptx==0.6.23
