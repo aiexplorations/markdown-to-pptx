@@ -30,6 +30,9 @@ class MarkdownToPPTX:
     def __init__(self) -> None:
         """Initialize the converter."""
         self.prs = Presentation()
+        # Set slide size to 16:10 format (10 inches x 6.25 inches)
+        self.prs.slide_width = Inches(10)
+        self.prs.slide_height = Inches(6.25)
         self.current_slide = None
         
     def parse_text_formatting(self, text: str) -> List[Tuple[str, bool, bool]]:
